@@ -1,0 +1,112 @@
+body {
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.admin-page {
+  padding: 20px;
+  background-color: #181a1b; /* Slightly lighter than black for the admin page */
+  background-image: none; /* Remove background image */
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #f8f9fa; /* Brighter text */
+}
+
+.product-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.product-form input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.product-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product-form button:hover {
+  background-color: #0056b3;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  border: 2px solid #28a745; /* Add a green border around the product table */
+  background: #23272b; /* Charcoal grey background for product section */
+}
+
+.product-table th,
+.product-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  color: #f8f9fa; /* Brighter text for table */
+}
+
+.product-table th {
+  background-color: #f1f1f1;
+}
+
+.product-table img {
+  width: 50px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-table button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product-table button:hover {
+  background-color: #c82333;
+}
+
+.search-filter {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-filter input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.product-list-section {
+  background: #23272b; /* Charcoal grey */
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+/* Optional: Make sure the table fits the new section style */
+.product-list-section .product-table {
+  background: transparent;
+  border-radius: 8px;
+}

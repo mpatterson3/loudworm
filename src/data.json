@@ -1,0 +1,8 @@
+{
+  "products": [
+    { "id": 1, "name": "Cannabis Flower", "price": 20, "image": "/src/assets/Gary-Payton-strain.jpg" },
+    { "id": 2, "name": "Cannabis Oil", "price": 50, "image": "/src/assets/Gary-Payton-strain.jpg" },
+    { "id": 3, "name": "Edibles", "price": 30, "image": "/src/assets/Gary-Payton-strain.jpg" }
+  ],
+  "orders": []
+}
