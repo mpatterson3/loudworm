@@ -8,11 +8,11 @@ app.use(express.json({limit:"10mb"}));
 app.use(express.urlencoded({ limit:"10mb" }));
 
 const db = mysql.createConnection({
-  host: 'localhost',
-  user: 'appuser',
-  password: 'apppassword',
-  database: 'appointments',
-  port: 3306,
+  host: process.env.DB_HOST || 'localhost',
+  user: process.env.DB_USER || 'appuser',
+  password: process.env.DB_PASSWORD || 'apppassword',
+  database: process.env.DB_NAME || 'appointments',
+  port: process.env.DB_PORT ? parseInt(process.env.DB_PORT) : 3306,
 });
 
 db.connect((err) => {

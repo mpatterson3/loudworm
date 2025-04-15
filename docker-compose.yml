@@ -14,5 +14,18 @@ services:
       - mysql_data:/var/lib/mysql
     restart: always
 
+  backend:
+    build: ./server
+    ports:
+      - "3001:3001"
+    environment:
+      - DB_HOST=mysql
+      - DB_USER=appuser
+      - DB_PASSWORD=apppassword
+      - DB_NAME=appointments
+      - DB_PORT=3306
+    depends_on:
+      - mysql
+
 volumes:
   mysql_data:
